@@ -1,0 +1,31 @@
+
+.user-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    max-width: 144px;
+    overflow: hidden;
+
+    .avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 14px;
+        color: #00AEED;
+        background: #CCEFFB;
+    }
+
+    .full-name {
+        color: #495057;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}

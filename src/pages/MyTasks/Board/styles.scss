@@ -1,0 +1,58 @@
+.boards-container {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    grid-gap: 30px;
+    width: 100%;
+
+    
+    .board-container {
+        background: #EFF2F7;
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        padding-bottom: 60px;
+        flex-basis: auto;
+
+        .card {
+            width: 100%;
+            padding: 20px 24px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 25px rgba(199, 199, 199, 0.16);
+            border-radius: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #495057;
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 120px;
+                height: 36px;
+                padding: 0 12px;
+                box-sizing: border-box;
+                font-weight: 400;
+                font-size: 13px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: transform .3s;
+
+                &:active {
+                    transform: scale(0.9);
+                }
+            }
+
+            .orange-button {
+                border: 1px solid #F6A031;
+                color: #F6A031;
+            }
+
+            .blue-button {
+                border: 1px solid #00AEED;
+                color: #00AEED;
+            }
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.progress-list-container {
+
+    .name-column {
+        display: flex;
+        align-items: center;
+        width: 314px;
+        height: 100%;
+        flex-shrink: 0;
+
+        .icon-space {
+            width: 36px;
+            path {
+                fill: #F1564A;
+            }
+        } 
+    }
+
+    .h-manager-column {
+        width: 200px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .client-company-column {
+        width: 200px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .ir35pro-status-column {
+        width: 155px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .statuses-column {
+        width: 187px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+    
+    .assigned-user-column {
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .list-table-header {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 5px;
+        height: 41px;
+    }
+
+    .list-table-row {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 53px;
+    }
+
+    .border-top {
+        border-top: 1px solid #CED4D9;
+    }
+
+    .border-right {
+        border-right: 1px solid #CED4D9;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #CED4D9;
+    }
+
+    .border-left {
+        border-left: 1px solid #CED4D9;
+    }
+
+    .list-table {
+        background: #FFFFFF;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        overflow-x: auto;
+        transition: height 0.5s;
+    }
+    
+    .list-table-hide {
+        height:104px;
+        overflow: hidden;
+        padding-bottom: 10px;
+
+        .chLT {
+            margin-bottom: 60px;
+        } 
+    }
+
+    .hide-show-btn {
+        cursor: pointer ;
+        transition: transform 0.5s;
+    }
+
+    .show-mode {
+        transform: rotate(180deg);
+    }
+
+    .hide-mode {
+        transform: rotate(90deg);
+    }
+
+    .statuses-color {
+        width: 4px;
+        height: 31px;
+    }
+
+    .bgc-orange {
+        background: #F7B53A;
+    }
+
+    .bgc-blue {
+        background: #3F6CFE;
+    }
+
+    .bgc-green {
+        background: #0FA3B1;
+    }
+    
+}

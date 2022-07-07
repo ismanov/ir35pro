@@ -1,0 +1,26 @@
+.status-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20px;
+    width: fit-content;
+    padding: 0 8px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.status-success {
+    color: #00CB8D;
+    background: #D9F7EE;
+}
+
+.status-primary {
+    color: #00AEED;
+    background: rgba(219, 241, 252, 1);
+}
+
+.status-error {
+    color: #EF5350;
+    background: #FCDDDC;
+}

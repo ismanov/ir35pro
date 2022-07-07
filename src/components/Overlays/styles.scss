@@ -1,0 +1,114 @@
+.root-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(73, 80, 87, 0.45);
+    z-index: 99990;
+
+    .alert-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 540px;
+        min-height: 263px;
+        background: #FFFFFF;
+        border-radius: 10px;
+
+        .close-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+        }
+
+        .alert-btn {
+            width: 130px;
+        }
+    }
+}
+
+.notifications-container {
+    position: fixed;
+    bottom: calc(120px);
+    left: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: all .5s;
+    z-index: 99991;
+
+    
+    .notification {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: fit-content;
+        max-width: 517px;
+        min-height: 81px;
+        margin-bottom: 20px;
+        padding: 10px 16px;
+        border-radius: 5px;
+        border-left: 6px solid;
+        background: #FFFFFF;
+        transform: translateY(1000px);
+        box-shadow: 0px 0px 14px rgba(73, 80, 87, 0.06);
+        animation-name: notification-animation;
+        
+        &-title {
+            margin-bottom: 2px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #495057;
+        }
+        
+        &-info {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(73, 80, 87, 0.4);
+        }
+    }
+
+    .notification-primary {
+        color: rgba(0, 174, 237, 1);
+        animation-duration: 5s;
+    }
+
+    .notification-success {
+        color: rgba(0, 203, 141, 1);
+        border-color: rgba(0, 203, 141, 1);
+        animation-duration: 5s;
+    }
+
+    .notification-warning {
+        color: rgba(247, 181, 58, 1);
+        border-color: rgba(247, 181, 58, 1);
+        animation-duration: 8s;
+    }
+
+    .notification-error {
+        color:  rgba(241, 86, 74, 1);
+        border-color: rgba(241, 86, 74, 1);
+        animation-duration: 8s;
+    }
+  }
+
+@keyframes notification-animation {
+    0%   {transform: translateX(-300px) translateY(0); opacity: 0.5 ;}
+    10%  {transform: translateX(0) translateY(0); opacity: 1;}
+    90%  {transform: translateX(0) translateY(0); opacity: 1;}
+    100% {transform: translateX(0) translateY(400px); opacity: 0;}
+  }
+
+  @media only screen and (max-width: 990px) {
+    .notifications-container {
+        left: 40px;
+    }
+  }

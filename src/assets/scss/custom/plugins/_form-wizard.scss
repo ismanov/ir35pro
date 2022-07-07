@@ -1,0 +1,277 @@
+//
+// Form Wizard
+//
+
+
+.form-wizard-wrapper {
+  label {
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+.wizard{
+  position: relative;
+  // step
+  .steps{
+    >ul{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+
+      @media (max-width: 1199.98px) {
+        flex-direction: column;
+      }
+
+      > a, > li{
+        flex-basis: 0;
+        flex-grow: 1;
+      }
+
+      >li{
+        width: 100%;
+        padding-bottom: 3rem;
+
+        a{
+          display: block;
+          padding: .5rem 1rem;
+          color: #121f3e60;
+          font-weight: $fw-medium;                   
+        }
+      }
+
+      .current-info{
+        position: absolute;
+        left: -999em;
+    }
+
+    
+    }
+
+    .number {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      border: 1px solid;
+      color: #121f3e60;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: .5rem;
+      position: relative;
+    }
+
+    .current {
+      a, a:active, a:hover {
+        color: #495057;
+        .number {
+          color: #495057;
+        }
+      }
+    }
+
+    .passed {
+      color: $primary;
+      .number {
+        background-color: $primary;
+        color: $primary;
+        &:before {
+          content: "\e9da";
+          color: white;
+          font-family: "boxicons"!important;
+          position: absolute;
+          left: 3px;
+        }
+      }
+    }
+  }
+
+  // content
+  >.content {
+    background-color: transparent;
+    padding: 14px;
+    margin-top: 0;
+    border-radius: 0;
+    min-height: 150px;
+    > .title{
+      position: absolute;
+      left: -999em;
+    }
+    >.body {
+      width: 100%;
+      height: 100%;
+      padding: 14px 0 0;
+      position: static
+    }
+  }
+
+  // actions
+
+  >.actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -120px;
+    > ul {
+        display: block;
+        text-align: right;
+        padding-left: 0;
+        width: 100%;
+          > li{
+            display: inline-block;
+            margin: 0 0.5em;
+
+          }
+      }
+      a {
+        background-color: $primary;
+        border-radius: 4px;
+        padding: 8px 15px;
+        color:  $white;
+        border: solid 1px $primary;
+      }
+      a:active, a:hover {
+        background-color: #0092c9;
+      }
+
+      button, button:active, button:hover {
+        background-color: $primary;
+        border-radius: 4px;
+        color:  $white;
+        height: 37px;
+        width: 130px;
+        border: solid 1px $primary;
+      }
+
+      .disabled {
+        a, a:active, a:hover {
+          opacity: .65;
+          background-color: $primary;
+          color: $white;
+          cursor: not-allowed;
+        }
+      }
+      .save-continue {
+        a {
+          background-color: transparent;
+          color: #495057;
+        }
+        a:active, a:hover {
+          background: $primary;
+          color: white;
+        }
+      }
+      .back {
+        &.disabled {
+          a:hover {
+            background-color: transparent;
+            color: #495057;
+            font-weight: normal;
+          }
+        }
+        a {
+          background-color: transparent;
+          color: #495057;
+          position: relative;
+          border: none;
+        }
+        a:active, a:hover {
+          font-weight: bold;
+        }
+        a:before {
+          content: "\e983";
+          font-family: "boxicons"!important;
+          position: absolute;
+          left: 0;
+        }
+      }
+  }
+
+  // verticl wixard
+  &.vertical-wizard{
+    display: flex;
+    flex-wrap: wrap;
+
+    // step
+    .steps{
+      >ul{
+        flex-direction: column;
+
+        >li{
+            width: 100% !important;
+        }
+        
+      }
+    }
+
+    .steps, .content, .actions{
+      width: 100%;
+    }
+
+    .steps{
+        @media (min-width: 768px) {
+          width: 25%;
+      }
+    }
+
+      .content{
+        padding: 24px;
+        @media (min-width: 768px) {
+          width: 75%;
+          padding: 12px 24px;
+      }
+
+      >.body{
+        padding: 0;
+      }
+      
+    }
+  }
+}
+
+span.comp-contractor:before {
+  content: "\e9da";
+  font-family: "boxicons"!important;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  color: white;
+}
+
+form#client_survey_form .wizard .steps .number {
+  width: 0;
+  height: 0;
+  border: none;
+}
+form#client_survey_form .wizard .steps a {
+  display: flex;
+  align-items: end;
+}
+form#client_survey_form .wizard .steps .passed .number {
+  width: 20px;
+  height: 20px;
+}
+
+.scroll-step {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  ul {
+      &.steps-container {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      display: block;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+  }
+}

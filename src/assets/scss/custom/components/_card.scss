@@ -1,0 +1,51 @@
+// 
+// _card.scss
+// 
+
+.card {
+  margin-bottom: $grid-gutter-width;
+  box-shadow: $box-shadow;
+}
+
+.card-drop {
+  color: $body-color;
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 0 0 7px 0;
+  font-weight: $font-weight-semibold;
+}
+
+.card-title-desc {
+  color: $card-title-desc;
+  margin-bottom: 24px;  
+}
+
+.start-10 {
+  left: 14% !important;
+}
+
+.start-20 {
+  left: 28% !important;
+}
+
+.start-30 {
+  left: 42% !important;
+}
+
+.start-60 {
+  left: 56% !important;
+}
+
+.start-70 {
+  left: 70% !important;
+}
+
+.start-80 {
+  left: 84% !important;
+}
+
+.font-color-white {
+  color: #521313;
+}

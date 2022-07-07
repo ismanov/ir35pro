@@ -1,0 +1,72 @@
+.progress-header-container {
+    width: 100%;
+    margin-top: 70px;
+    padding: 32px 36px 16px;
+
+    .tabs-panel {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+        height: 66px;
+        border-bottom: 1px solid #CED4D9;
+
+        .tabs {
+            position: relative;
+            margin-bottom: -1px;
+            display: flex;
+            align-items: end;
+            
+            .tab {
+                display: flex;
+                align-items: center;
+                padding: 0 5px 20px;
+                margin-right: 28px;
+                margin-bottom: 2px;
+                color: #A0A5B2;
+
+                path {
+                    fill: #A0A5B2;
+                }
+            }
+
+            .active-tab {
+                border-bottom: 2px solid #495057;
+                margin-bottom: 0;
+                color: #495057;
+                path {
+                    fill: #495057;
+                }
+            }
+            
+            
+
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            width: 350px;
+            height: 36px;
+            margin-bottom: 15px;
+            padding: 0 12px;
+            background: #FFFFFF;
+            border-radius: 5px;
+
+            input[type="text"] {
+                flex-grow: 1    ;
+                border: none;
+                background-color: transparent;
+                margin-left: 10px;
+            }
+        }
+
+
+    }
+
+    .filters-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+}

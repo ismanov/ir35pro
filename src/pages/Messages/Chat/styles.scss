@@ -1,0 +1,17 @@
+
+.chat-screen-body {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    
+    .chat-list {
+        height: 100%;
+        width: 415px;
+        height: 100%;
+        flex-shrink: 0;
+     }
+    .chat-view { 
+        flex-grow: 1;
+        margin-right: 36px;
+     }
+}

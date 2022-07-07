@@ -1,0 +1,18 @@
+.borad-width {
+  min-width: 400px;
+  width: 400px;
+}
+
+@media (max-width: 1024px) {
+  .borad-width {
+    min-width: 300px;
+  }
+}
+
+.fade {
+  transition: opacity 0.15s linear;
+}
+
+.modal-backdrop {
+  background-color: #0005 !important;
+}

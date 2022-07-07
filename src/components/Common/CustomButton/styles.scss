@@ -1,0 +1,58 @@
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 140px;
+    height: 36px;
+    padding: 0 15px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px solid;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.9) !important;
+    }
+}
+
+.button-type-success {
+    color: #FFFFFF  ;
+    background: #00CB8D;
+    border-color: #00CB8D;
+}
+
+.button-type-primary {
+    color: #FFFFFF  ;
+    background: #00AEED;
+    border-color: #00AEED;
+}
+
+.button-type-error {
+    color: #FFFFFF  ;
+    background: #F1564A;
+    border-color: #F1564A;
+}
+
+.button-type-warning {
+    color: #FFFFFF  ;
+    background: #F6A031;
+    border-color: #F6A031;
+}
+
+.border-outline {
+    background-color: #FFFFFF;
+    color: #495057;
+}
+
+.link {
+    border: none;
+    background: transparent !important;
+    color: #00AEED;
+    padding: 0;
+}
+
+.auto-width {
+    min-width: 0;
+}

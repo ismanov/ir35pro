@@ -1,0 +1,20 @@
+.messages-screen-container {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 70px 0 60px;
+
+    .messages-screen-tab {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 80px;
+        padding: 16px 36px;
+     }
+    .messages-screen-body {
+        flex-grow: 1;
+    }
+}

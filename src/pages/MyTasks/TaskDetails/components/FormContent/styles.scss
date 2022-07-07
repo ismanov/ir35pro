@@ -1,0 +1,21 @@
+.form-content-container {
+
+    .text-area {
+        width: 100%;
+        height: 250px;
+        margin-top: 32px;
+        padding: 16px;
+        background: #F6F8FB;
+        border-radius: 5px;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            resize: none;
+        }
+    }
+}

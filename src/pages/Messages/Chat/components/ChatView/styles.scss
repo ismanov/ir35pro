@@ -1,0 +1,115 @@
+.chat-view-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 210px);
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 999;
+
+    .chat-view-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 108px;
+        padding: 24px 40px 0;
+        box-sizing: border-box;
+        background: rgba(246, 248, 251, 0.8);
+        box-shadow: 0px -2px 10px rgba(73, 80, 87, 0.02);
+        border-radius: 5px 5px 0px 0px;
+        z-index: 3;
+
+        .members-modal {
+            position: absolute;
+            display: none;
+            top: 116px;
+            width: 260px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(73, 80, 87, 0.1);
+            border-radius: 5px;
+            padding: 8px 0;
+            z-index: 999;
+
+            .member-row {
+                width: 100%;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+                overflow: hidden;
+                cursor: pointer;
+
+
+                &:hover {
+                    background: #F6F8FB;
+                }
+
+                &_avatar {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 46px;
+                    height: 46px;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    margin-right: 12px;
+                    background-color: #CCEFFB;
+                    overflow: hidden;
+                }
+            }
+        }
+        #chat-members-modal-view-id {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            outline: 0;
+            border: none;
+        }
+
+        #chat-members-modal-view-id:focus ~ .members-modal {
+            display: block;
+        }
+
+    }
+    .chat-view-messages {
+        height: calc(100vh - 454px);
+        display: flex;
+        flex-shrink: 1;
+        flex-direction: column;
+        overflow-y: auto;
+        flex-flow: column-reverse;
+
+        margin: 0 40px;
+        padding-bottom: 20px;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        z-index: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .separator {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-line {
+                flex-grow: 1;
+                height: 0;
+                border: 0.5px solid #CED4D9;
+            }
+        }
+    }
+    .chat-message-input {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        min-height: 96px;
+        padding: 4px 40px 24px;
+    }
+}

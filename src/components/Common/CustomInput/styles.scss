@@ -1,0 +1,56 @@
+.custom-input821{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 325px;
+        height: 36px;
+        padding: 0 12px;
+        border: 1px solid #CED4D9;
+        border-radius: 3px;
+
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-weight: 400;
+            background: transparent;
+            font-size: 14px;
+            color: #485056;
+        }
+        .no-information {
+            color: #74788C;
+        }
+
+        input[type='date'] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            border: none;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            background: transparent;
+            bottom: 0;
+            color: transparent;
+            cursor: pointer;
+            width: 325px;
+            height: 36px;
+            z-index: 999;
+        }
+    
+        &:focus-within {
+            border-color: #00AEED;
+        }
+    }
+    .disabled {
+        border-color: rgba(206, 212, 217, 0.5);
+        background: rgba(240, 242, 246, 0.5); 
+    }
+}

@@ -1,0 +1,125 @@
+
+a svg path {
+    fill: #A0A5B2;
+  }
+  
+.pointer { cursor: pointer;}
+
+.card-style {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 16px;
+}
+
+.disabled { cursor: no-drop ;}
+
+.relative { position: relative;}
+
+.display-none { display: none !important;}
+
+.hidden { overflow: hidden;}
+.overflow-auto { overflow: auto;}
+
+.hidden-x { overflow-x: hidden;}
+.scroll-x { overflow-x: scroll;}
+
+.hidden-y { overflow-y: hidden;}
+.scroll-y { overflow-y: scroll;}
+
+.btn-click:active { transform: scale(0.8);}
+
+.reversed { transform: rotate(180deg);}
+
+.full-width { width: 100%;}
+
+.fit-content { width: fit-content;} 
+
+.disabled-button {
+    background-color: lightgrey !important;
+    color: grey;
+    cursor: no-drop !important;
+    border: lightgrey;
+    &:active {
+        transform: scale(1) !important;
+    }
+}
+
+div#sidebar-menu .active {
+    background: linear-gradient(90deg, rgba(38, 160, 252, 0.1) 0%, rgba(38, 160, 252, 0) 117.12%);
+    border-left: #26A0FC 3px solid;
+    
+    span {
+        color: #26A0FC !important;
+    }
+
+    svg path {
+        fill: #26A0FC;
+      }
+    
+}
+
+#sidebar-menu a:hover {
+    background: linear-gradient(90deg, rgba(38, 160, 252, 0.1) 0%, rgba(38, 160, 252, 0) 117.12%);
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;  
+    height: 36px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:active {
+        transform: scale(0.8);
+    }
+}
+
+.add-button {
+    background: #00AEED;
+    margin-left: 16px;
+}
+
+.custom-scrollbar {
+    &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 3px;
+        background-color: #F2F2F5;
+      }
+
+    &::-webkit-scrollbar-thumb {
+        background: #A0A5B2; 
+        max-height: 200px;
+        position: relative;
+        right: 20px;
+      }
+}
+
+.without-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cancel-button {
+    background: #FFFFFF;
+    border: 1px solid #00AEED; 
+}
+
+.opc0 { opacity: 0;}
+.opc01 { opacity: 0.1;}
+.opc02 { opacity: 0.2;}
+.opc03 { opacity: 0.3;}
+.opc04 { opacity: 0.4;}
+.opc05 { opacity: 0.5;}
+.opc06 { opacity: 0.6;}
+.opc07 { opacity: 0.7;}
+.opc08 { opacity: 0.8;}
+.opc09 { opacity: 0.9;}
